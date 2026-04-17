@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <!--INPUT para o display-->
+      <input
+        type="text"
+        name="display"
+        id="display"
+        value="0"
+        readonly
+        disabled
+      />
+      <!--BOTOES da calculadora para o grid-->
+      <div class="botoes">
+        <!--operadores-->
+        <button class="operador" value="+">+</button>
+        <button class="operador" value="-">-</button>
+        <button class="operador" value="/">&divide;</button>
+        <button class="operador" value="*">&times;</button>
+        <!--numeros-->
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+        <!--0 e demais operações-->
+        <button type="button" value="0" class="zero">0</button>
+        <button type="button" value="." class="decimal">,</button>
+        <button type="button" value="AC" class="limpar">AC</button>
+        <button type="button" class="igual">=</button>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
